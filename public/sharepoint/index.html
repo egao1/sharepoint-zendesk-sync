@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BayCare HR Portal — SharePoint</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" />
+    <link rel="stylesheet" href="/sharepoint-static/styles.css" />
+  </head>
+  <body>
+    <header class="suite-bar">
+      <button class="waffle" aria-label="App launcher" type="button">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </button>
+      <span class="suite-product">SharePoint</span>
+      <div class="suite-search">
+        <input type="search" placeholder="Search this site" disabled />
+      </div>
+      <div class="suite-spacer"></div>
+      <div class="suite-account" title="Signed in (mock)">EG</div>
+    </header>
+
+    <div class="site-bar">
+      <div class="site-icon">B</div>
+      <div class="site-meta">
+        <div class="site-name">BayCare HR Portal</div>
+        <div class="site-tabs">
+          <span class="tab active">Home</span>
+          <span class="tab">Documents</span>
+          <span class="tab">Pages</span>
+          <span class="tab">Site contents</span>
+        </div>
+      </div>
+      <div class="site-actions">
+        <span class="sync-pill" id="syncPill" data-state="idle">
+          <span class="sync-dot"></span>
+          <span class="sync-text">Loading…</span>
+        </span>
+      </div>
+    </div>
+
+    <nav class="breadcrumb">
+      <a href="#">Site Pages</a>
+      <span class="sep">›</span>
+      <a href="#">Benefits &amp; HR Services</a>
+      <span class="sep">›</span>
+      <a href="#">Technology &amp; Work Efficiency Support</a>
+    </nav>
+
+    <main class="page">
+      <div class="page-header">
+        <h1
+          id="pageTitle"
+          class="page-title"
+          contenteditable="true"
+          spellcheck="true"
+          data-placeholder="Untitled page"
+        ></h1>
+        <div class="page-meta">
+          <span class="author-chip">
+            <span class="author-avatar">K</span>
+            <span class="author-name">Kat</span>
+          </span>
+          <span class="page-meta-sep">·</span>
+          <span id="updatedAt" class="updated-at">—</span>
+        </div>
+      </div>
+
+      <div id="editor" class="page-body"></div>
+    </main>
+
+    <footer class="page-footer">
+      Synced live to
+      <a id="zendeskLink" href="#" target="_blank" rel="noopener">Zendesk Help Center</a>.
+      Edits here update the published article in real time.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+    <script src="/sharepoint-static/app.js"></script>
+  </body>
+</html>
