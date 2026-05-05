@@ -9,6 +9,7 @@
   const syncPill = document.getElementById('syncPill');
   const syncText = syncPill.querySelector('.sync-text');
   const zendeskLink = document.getElementById('zendeskLink');
+  const breadcrumbSectionEl = document.getElementById('breadcrumbSection');
 
   let quill;
   let lastSyncedAt = null;
@@ -122,6 +123,10 @@
 
       document.title = `${data.title} \u2014 SharePoint`;
       titleEl.textContent = data.title || '';
+
+      if (breadcrumbSectionEl) {
+        breadcrumbSectionEl.textContent = data.section || 'Article';
+      }
 
       quill = new Quill('#editor', {
         theme: 'snow',

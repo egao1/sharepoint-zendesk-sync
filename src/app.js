@@ -13,9 +13,7 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  const articleId = process.env.ZENDESK_DEFAULT_ARTICLE_ID;
-  if (articleId) return res.redirect(`/sharepoint/${articleId}`);
-  res.send('SharePoint demo: set ZENDESK_DEFAULT_ARTICLE_ID or visit /sharepoint/<articleId>.');
+  res.redirect('/sharepoint');
 });
 
 app.use(

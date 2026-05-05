@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Site Pages — BayCare HR Portal</title>
+    <link rel="stylesheet" href="/sharepoint-static/styles.css" />
+  </head>
+  <body>
+    <header class="suite-bar">
+      <button class="waffle" aria-label="App launcher" type="button">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </button>
+      <span class="suite-product">SharePoint</span>
+      <div class="suite-search">
+        <input type="search" placeholder="Search this site" disabled />
+      </div>
+      <div class="suite-spacer"></div>
+      <div class="suite-account" title="Signed in (mock)">EG</div>
+    </header>
+
+    <div class="site-bar">
+      <div class="site-icon">B</div>
+      <div class="site-meta">
+        <div class="site-name">BayCare HR Portal</div>
+        <div class="site-tabs">
+          <a class="tab" href="/sharepoint">Home</a>
+          <span class="tab">Documents</span>
+          <a class="tab active" href="/sharepoint">Pages</a>
+          <span class="tab">Site contents</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="breadcrumb">
+      <a href="/sharepoint">Site Pages</a>
+      <span class="sep">›</span>
+      <span class="crumb-current">Benefits &amp; HR Services</span>
+    </nav>
+
+    <main class="library">
+      <div class="library-header">
+        <h1 class="library-title">Site Pages</h1>
+        <div class="library-subtitle">Benefits &amp; HR Services</div>
+      </div>
+
+      <div class="library-commandbar" role="toolbar" aria-label="Pages library commands">
+        <button class="cmd primary" type="button" aria-disabled="true">
+          <span class="cmd-icon">+</span> New
+        </button>
+        <button class="cmd" type="button" aria-disabled="true">
+          <span class="cmd-icon">&uarr;</span> Upload
+        </button>
+        <span class="cmd-sep" aria-hidden="true"></span>
+        <button class="cmd" type="button" aria-disabled="true">Sync</button>
+        <button class="cmd" type="button" aria-disabled="true">Pin to top</button>
+        <button class="cmd" type="button" aria-disabled="true">Filter</button>
+        <button class="cmd" type="button" aria-disabled="true">Group by section</button>
+        <span class="library-spacer"></span>
+        <span class="view-switch" aria-hidden="true">All Pages &or;</span>
+      </div>
+
+      <div class="library-table" role="table" aria-label="Pages">
+        <div class="lib-row lib-head" role="row">
+          <div class="lib-cell lib-cell-name" role="columnheader">
+            <span class="lib-checkbox" aria-hidden="true"></span>
+            Name
+          </div>
+          <div class="lib-cell lib-cell-section" role="columnheader">Section</div>
+          <div class="lib-cell lib-cell-modified" role="columnheader">Modified</div>
+          <div class="lib-cell lib-cell-modifier" role="columnheader">Modified By</div>
+        </div>
+
+        <div id="libRows" class="lib-rows">
+          <div class="lib-row lib-row-skeleton" aria-hidden="true">
+            <div class="lib-cell lib-cell-name"><span class="skel skel-icon"></span><span class="skel skel-text skel-w-60"></span></div>
+            <div class="lib-cell lib-cell-section"><span class="skel skel-text skel-w-50"></span></div>
+            <div class="lib-cell lib-cell-modified"><span class="skel skel-text skel-w-30"></span></div>
+            <div class="lib-cell lib-cell-modifier"><span class="skel skel-text skel-w-30"></span></div>
+          </div>
+          <div class="lib-row lib-row-skeleton" aria-hidden="true">
+            <div class="lib-cell lib-cell-name"><span class="skel skel-icon"></span><span class="skel skel-text skel-w-70"></span></div>
+            <div class="lib-cell lib-cell-section"><span class="skel skel-text skel-w-40"></span></div>
+            <div class="lib-cell lib-cell-modified"><span class="skel skel-text skel-w-30"></span></div>
+            <div class="lib-cell lib-cell-modifier"><span class="skel skel-text skel-w-30"></span></div>
+          </div>
+          <div class="lib-row lib-row-skeleton" aria-hidden="true">
+            <div class="lib-cell lib-cell-name"><span class="skel skel-icon"></span><span class="skel skel-text skel-w-50"></span></div>
+            <div class="lib-cell lib-cell-section"><span class="skel skel-text skel-w-50"></span></div>
+            <div class="lib-cell lib-cell-modified"><span class="skel skel-text skel-w-30"></span></div>
+            <div class="lib-cell lib-cell-modifier"><span class="skel skel-text skel-w-30"></span></div>
+          </div>
+        </div>
+
+        <div id="libEmpty" class="lib-empty" hidden>No pages to show.</div>
+        <div id="libError" class="lib-error" hidden></div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      Pages are synced live to
+      <a href="https://z3nzenhealthcare.zendesk.com/hc/en-us" target="_blank" rel="noopener">Zendesk Help Center</a>.
+      Edits made here update the published article in real time.
+    </footer>
+
+    <script src="/sharepoint-static/library.js"></script>
+  </body>
+</html>
